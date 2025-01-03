@@ -1,5 +1,0 @@
-name: MinigameApi
-version: LATEST
-main: me.xcuzimsmart.api.minigame.Main
-dependency: MCPluginUtils
-load-before: MCPluginUtils
