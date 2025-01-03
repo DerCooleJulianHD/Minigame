@@ -56,4 +56,18 @@ public class Stats {
     public int deaths() {
         return deaths;
     }
+
+    public void sendPlayer(Player player) {
+        player.sendMessage(ChatColor.GOLD.toString() + ChatColor.STRIKETHROUGH + "                " + ChatColor.GOLD + "[ " + CHtColor.WHITE + ChatColor.BOLD + "STATS" + ChatColor.GOLD + " ]" + ChatColor.GOLD + ChatColor.STRIKETHROUGH + "                ");
+        player.sendMessage("");
+        player.sendMessage(ChatColor.GRAY + "K/D: " + ChatColor.GREEN + kd());
+        player.sendMessage("");
+        player.sendMessage(ChatColor.GRAY + "Kills: " + ChatColor.GOLD + kills();
+        player.sendMessage(ChatColor.GRAY + "Deaths: " + ChatColor.RED + deaths();
+        player.sendMessage(ChatColor.GRAY + "Destroyed Beds: " + ChatColor.AQUA + bedsDestroyed());
+        player.sendMessage(ChatColor.GRAY + "Rounds-Played: " + ChatColor.AQUA + roundsPlayed());
+        player.sendMessage(ChatColor.GRAY + "Wins: " + ChatColor.GREEN + wins();
+        player.sendMessage("");
+        player.sendMessage(ChatColor.GOLD.toString() + ChatColor.STRIKETHROUGH + "                                         ");
+    }
 }
